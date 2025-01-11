@@ -2,15 +2,24 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import db from "./utils/db.js";
+import userRouter from "./routes/userRouter.js";
+import cookieParser from "cookie-parser";
+import courseRouter from "./routes/courseRouter.js";
+import applicationRouter from "./routes/applicationRouter.js";
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 dotenv.config();
 
 await db();
 app.use(cors());
 
-app.listen(2000, () => {
-  console.log("listening at 2000");
-});
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/course", courseRouter);
+app.use("/api/v1/application", applicationRouter);
 
-// "mongodb://127.0.0.1:27017/gym_site"
+app.listen(process.env.PORT, () => {
+  console.log("listening at" + process.env.PORT);
+});
