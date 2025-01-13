@@ -42,7 +42,20 @@ export const createCourse = async (req, res) => {
   }
 };
 
-export const getCourses = async (req, res) => {
+export const updateCourse = async (req, res) => {
+  let courseId = req.params.id;
+  try {
+    let course = await Course.find({ _id: courseId });
+  } catch (e) {
+    console.log(e.message);
+    res.status(500).json({
+      message: "Error in updating the course",
+      success: false,
+    });
+  }
+};
+
+export const getAllCourses = async (req, res) => {
   let courses = await Course.find({});
   try {
     if (courses.length > 0) {
@@ -53,6 +66,7 @@ export const getCourses = async (req, res) => {
     }
     return res.status(200).json({
       message: "No course Is Here",
+      success: true,
     });
   } catch (e) {
     console.error(e);

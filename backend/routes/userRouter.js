@@ -13,7 +13,7 @@ const userRouter = express.Router();
 userRouter.route("/signup").post(signup);
 userRouter.route("/login").post(login);
 userRouter.route("/update/profile").put(isAuthenticated, userProfile);
-
 userRouter.route("/logout").get(logout);
+
 
 export default userRouter;

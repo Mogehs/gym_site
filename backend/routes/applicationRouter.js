@@ -1,6 +1,7 @@
 import express from "express";
 import {
   addApplications,
+  getAllApplications,
   getApplication,
   updateApplication,
 } from "../controllers/applicationsController.js";
@@ -13,5 +14,6 @@ applicationRouter.route("/get/:id").get(isAuthenticated, getApplication);
 applicationRouter
   .route("/update/:id")
   .patch(isAuthenticated, updateApplication);
+applicationRouter.route("/get").get(isAuthenticated, getAllApplications);
 
 export default applicationRouter;
