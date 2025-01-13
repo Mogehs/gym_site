@@ -1,12 +1,11 @@
 import Course from "../models/courseSchema.js";
-import jwt from "jsonwebtoken";
 
 export const createCourse = async (req, res) => {
-  let { title, description, duration, price } = req.body;
+  let { title, description, duration } = req.body;
   const token = req.cookies.token;
 
   try {
-    if (!title || !description || !duration || !price) {
+    if (!title || !description || !duration) {
       return res.status(401).json({
         message: "Please Give All The Information Related To The Course",
         success: false,
@@ -25,7 +24,6 @@ export const createCourse = async (req, res) => {
       title,
       description,
       duration,
-      price,
     });
 
     await course.save();
