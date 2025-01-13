@@ -35,7 +35,6 @@ export const createSubscription = async (req, res) => {
       endDate,
       status,
       courses: courses,
-      student: req.id,
     });
 
     await subscription.save();
