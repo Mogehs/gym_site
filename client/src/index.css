@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "custom";
+  src: url("/client/public/custom-font/montserrat_5.1.1_cyrillic-100-normal.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
