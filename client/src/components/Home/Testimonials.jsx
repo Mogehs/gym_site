@@ -62,7 +62,7 @@ const Testimonials = () => {
               className="h-full w-full object-cover rounded-tr-[10rem] max-sm:rounded-none"
             />
           </div>
-          <div className="bg-black h-[21.73rem] w-[70%] text-white mt-36 flex justify-center flex-col pl-[10rem] max-lg:pl-[5rem] max-sm:pl-0 max-sm:mt-10 max-sm:w-full max-sm:text-center">
+          <div className="bg-black h-[21.73rem] w-[70%] text-white lg:mt-[9rem] flex justify-center flex-col pl-[10rem] max-lg:pl-[5rem] max-sm:pl-0 max-sm:w-full max-sm:text-center">
             <p className="w-[70%] h-[8rem] max-sm:w-full">
               {testimonials[currentIndex].text}
             </p>
