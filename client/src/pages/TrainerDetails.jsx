@@ -2,7 +2,7 @@ import Hero from "../components/trainer-detail/Hero";
 
 const TrainerDetails = () => {
   return (
-    <div>
+    <div className="h-[100vh]">
       <Hero />
     </div>
   );
