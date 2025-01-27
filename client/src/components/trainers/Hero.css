@@ -1,0 +1,14 @@
+.hero {
+  background-image: url("/images/trainers/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.heroPic {
+  background-image: url("/images//trainers/bg-img-2.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  /* width: 20%; */
+}
