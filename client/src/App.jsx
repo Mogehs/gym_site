@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Trainers from "./pages/Trainers";
 import TrainerDetails from "./pages/TrainerDetails";
+import Pricing from "./pages/Pricing";
 import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/pricing",
-        element: <TrainerDetails />,
+        element: <Pricing />,
       },
       {
         path: "/sign-in",

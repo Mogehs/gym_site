@@ -34,7 +34,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="h-fit p-10">
+    <div className="h-fit p-10 max-sm:p-4">
       <div>
         <div
           className="text-white h-[1.7rem] w-[13rem] bg-cover bg-center bg-no-repeat flex justify-center items-center text-[1.1rem] font-light uppercase overflow-hidden"
@@ -45,25 +45,25 @@ const Testimonials = () => {
           <p className="aboslute font-semibold overflow-hidden">Testimonials</p>
         </div>
         <div className="mt-8 flex items-center justify-between gap-10 max-lg:flex-col max-lg:text-center">
-          <h1 className="text-[2rem] font-bold leading-[2rem]">
+          <h1 className="text-[2rem] font-bold leading-[2rem] max-sm:text-[1.5rem]">
             Some Reviews From Our Trusted Clients
           </h1>
-          <p>
+          <p className="max-sm:text-sm">
             Gymatan unknown printer took lle type anscraey retea bled maketype
             specimen bookayurvived ot onlyive centuries.Gymatan unknown printer
             took lle type anscraey.
           </p>
         </div>
-        <div className="h-fit w-full mt-10 flex justify-center items-center">
-          <div className="w-[40%] h-full">
+        <div className="h-fit w-full mt-10 flex justify-center items-center max-sm:flex-col">
+          <div className="w-[40%] h-full max-sm:w-full">
             <img
               src="/images/home/testimonial-7-1.jpg"
               alt=""
-              className="h-full w-full object-cover rounded-tr-[10rem]"
+              className="h-full w-full object-cover rounded-tr-[10rem] max-sm:rounded-none"
             />
           </div>
-          <div className="bg-black h-[21.73rem] w-[70%] text-white mt-36 flex justify-center flex-col pl-[10rem]">
-            <p className="w-[70%] h-[8rem]">
+          <div className="bg-black h-[21.73rem] w-[70%] text-white mt-36 flex justify-center flex-col pl-[10rem] max-lg:pl-[5rem] max-sm:pl-0 max-sm:mt-10 max-sm:w-full max-sm:text-center">
+            <p className="w-[70%] h-[8rem] max-sm:w-full">
               {testimonials[currentIndex].text}
             </p>
             <div className="mt-3">
@@ -71,7 +71,7 @@ const Testimonials = () => {
                 {testimonials[currentIndex].name}
               </p>
               <p>{testimonials[currentIndex].position}</p>
-              <div className="flex gap-3 mt-10 justify-end mr-10">
+              <div className="flex gap-3 mt-10 justify-end mr-10 max-sm:justify-center max-sm:mr-0">
                 <div
                   className="bg-white w-fit p-1 cursor-pointer"
                   onClick={handlePrevious}
