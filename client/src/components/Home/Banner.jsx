@@ -3,11 +3,11 @@ import NeuButton from "./NeuButton";
 const Banner = () => {
   return (
     <>
-      <div className="overflow-x-hidden h-fit">
+      <div className="overflow-x-hidden">
         <img
           src="/images/banner-9-1.jpg"
           alt=""
-          className="h-[100vh] object-cover absolute"
+          className="object-cover w-full h-full absolute"
         />
         <div
           className="text-white absolute top-[10rem] left-[3rem] md:top-[12rem] md:left-[6rem] h-[1.7rem] w-[13rem] bg-cover bg-center bg-no-repeat flex justify-center items-center text-[1.1rem] font-light uppercase overflow-hidden"

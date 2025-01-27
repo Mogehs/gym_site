@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar";
 import Trainers from "./pages/Trainers";
 import TrainerDetails from "./pages/TrainerDetails";
 import Footer from "./components/Footer";
-import Hero from "./components/pricing/Hero";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -29,7 +30,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/pricing",
-        element: <Hero />,
+        element: <TrainerDetails />,
+      },
+      {
+        path: "/sign-in",
+        element: <SignIn />,
+      },
+      {
+        path: "/sign-up",
+        element: <SignUp />,
       },
     ],
   },

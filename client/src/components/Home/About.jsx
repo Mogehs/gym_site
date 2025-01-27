@@ -1,22 +1,22 @@
 const About = () => {
   return (
-    <div className="min-h-screen w-[98.5vw] relative top-[30rem] md:top-[31rem] lg:top-[42rem]  flex justify-center items-center overflow-hidden xl:top-[47rem]">
+    <div className="min-h-screen w-[98.5vw] relative top-[30rem] md:top-[40rem] lg:top-[42rem]  flex justify-center items-center overflow-hidden xl:top-[47rem] ">
       <div className="h-fit m-1 w-full md:w-[94vw] flex flex-col md:flex-row gap-3 items-center md:justify-center xl:justify-center xl:gap-14">
         <div className="flex items-center w-[33rem] h-screen md:h-fit xl:top-[8rem] relative">
           <img
             src="/svgs/halfCircle.svg"
             alt=""
-            className="h-[60vh] relative left-36 md:h-[80vh] md:left-14"
+            className="h-[60vh] relative left-36 md:h-[80vh] md:left-4"
           />
           <img
             src="/images/running.png"
             alt=""
-            className="h-[60vh] relative left-40 md:left-20 md:h-[80vh]"
+            className="h-[60vh] relative left-40 md:left-10 md:h-[80vh]"
           />
           <img
             src="/images/girlRunning.png"
             alt=""
-            className="h-[50vh] right-[5rem]  md:h-[75vh] relative md:right-[14rem] lg:right-[19rem] xl:right-[25rem]"
+            className="h-[50vh] right-[5rem]  md:h-[75vh] relative md:right-[20rem] lg:right-[19rem] xl:right-[25rem]"
           />
         </div>
         <div className="flex items-start p-2 md:w-[30rem] lg:w-[30rem] md:h-fit">
