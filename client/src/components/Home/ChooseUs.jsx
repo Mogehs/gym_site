@@ -1,6 +1,6 @@
 const ChooseUs = () => {
   return (
-    <div className=" relative top-[45rem] md:top-[55rem] lg-[45rem] w-full min-h-[120vh]">
+    <div className=" relative top-[45rem] md:top-[55rem] lg-[45rem] w-full">
       <div className="h-full flex flex-col items-center lg:flex-row justify-between overflow-hidden">
         <div className="p-5 w-[20rem] md:w-[30rem] lg:w-1/2 h-full">
           <img src="/images/service-2.png" alt="" />
