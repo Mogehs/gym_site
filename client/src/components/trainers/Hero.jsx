@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-center md:text-left">
           Trainers
         </h1>
-        <div className="heroPic sm:max-w-[50%] md:max-w-[50%] lg:max-w-[20%] flex justify-center gap-1 mt-2">
+        <div className="heroPic w-full md:max-w-[50%] lg:max-w-[20%] flex justify-center gap-1 mt-2">
           <a href="#" className="home">
             <span className="hover:text-[#ff0336]">Gymate</span>
           </a>

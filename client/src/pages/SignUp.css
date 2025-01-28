@@ -1,0 +1,6 @@
+.hero {
+  background-image: url("/images/trainers/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
