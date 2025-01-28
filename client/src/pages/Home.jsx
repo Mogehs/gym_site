@@ -4,6 +4,8 @@ import Classes from "../components/Home/Classes";
 import Feauters from "../components/Home/feauters";
 import ChooseUs from "../components/Home/ChooseUs";
 import Trainers from "../components/Home/Trainers";
+import PricingPlans from "../components/Home/PricingPlans";
+import Testimonials from "../components/Home/Testimonials";
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <Feauters />
       <ChooseUs />
       <Trainers />
+      <PricingPlans />
+      <Testimonials />
     </>
   );
 };
