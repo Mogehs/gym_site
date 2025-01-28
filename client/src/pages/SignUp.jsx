@@ -14,7 +14,7 @@ function SignUp() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-6">
+    <div className="min-h-screen flex items-center justify-center bg-[#000000] p-6">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
           SignUp
@@ -82,7 +82,7 @@ function SignUp() {
           <div className="flex justify-center mb-6">
             <button
               type="submit"
-              className="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+              className="w-full py-3 px-6 bg-[#ff0336] text-white font-semibold rounded-lg shadow-md hover:bg-[#ff5a73] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
             >
               SignUp
             </button>
