@@ -1,7 +1,8 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import footerPic from "/fotter.svg";
+import Icons from "../components/trainer-detail/Icons";
 
 const Footer = () => {
   return (
@@ -19,37 +20,11 @@ const Footer = () => {
               />
             </a>
             <p className="text-[#9A9999] mb-4">
-              When an unknown printer took galle tyand scram bled it to make typnknown pret specimen book printer took galle of tyand scram.
+              When an unknown printer took galle tyand scram bled it to make
+              typnknown pret specimen book printer took galle of tyand scram.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook className="w-10 h-10 text-xl hover:text-[#FF0336] transition-colors bg-[#EFEFEF] rounded-full flex items-center justify-center p-2" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTwitter className="w-10 h-10 text-xl hover:text-[#FF0336] transition-colors bg-[#EFEFEF] rounded-full flex items-center justify-center p-2" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram className="w-10 h-10 text-xl hover:text-[#FF0336] transition-colors bg-[#EFEFEF] rounded-full flex items-center justify-center p-2" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin className="w-10 h-10 text-xl hover:text-[#FF0336] transition-colors bg-[#EFEFEF] rounded-full flex items-center justify-center p-2" />
-              </a>
+              <Icons />
             </div>
           </div>
 
