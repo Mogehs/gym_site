@@ -7,6 +7,7 @@ import Pricing from "./pages/Pricing";
 import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Blogs from "./pages/Blogs";
 
 const MainLayout = () => (
   <div className="lg:mx-auto lg:max-w-7xl">
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/trainer-details",
         element: <TrainerDetails />,
+      },
+      {
+        path: "/blog",
+        element: <Blogs />,
       },
       {
         path: "/pricing",
